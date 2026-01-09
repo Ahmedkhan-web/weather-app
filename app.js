@@ -32,3 +32,12 @@ cards.forEach((card, i) => {
   card.style.animationDelay = `${i * 0.1}s`;
 });
 
+const header = document.querySelector(".app-header h1");
+
+setInterval(() => {
+  header.style.textShadow = `0 0 ${Math.random() * 20}px rgba(255,255,255,0.6),
+                             0 0 ${Math.random() * 30}px rgba(86,204,242,0.5),
+                             0 0 ${Math.random() * 40}px rgba(47,128,237,0.4)`;
+}, 800);
+
+
